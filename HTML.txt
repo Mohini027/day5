@@ -1,0 +1,886 @@
+What is HTML?
+
+HTML stands for Hyper Text Markup Language.
+
+HTML is the standard markup language for creating Web pages.
+
+HTML describes the structure of a web page.
+
+HTML consists of series of elements.
+
+HTML elements tell the browser how to display the content.
+
+HTML elements label pieces of content such as "this is a heading ","this is a paragraph","this is a link",etc.
+
+A simple HTML5 Document
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>My first heading</h1>
+<p>my first paragraph</p>
+</body>
+</html>
+
+Example explained
+
+The <!DOCTYPE html> declaration defines that this document is an HTML5 document.
+
+The <html> element is the root element of an HTML page.
+
+The <head> element contains meta information about the HTML page.
+
+The <title> element specifies a title for the HTML page(which is shown in the browser's title bar or in the page's tab).
+
+The <body> element defines the document's body, and is a container for all the visible contents,such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+
+The <h1> element defines a large heading.
+
+The <p> element defines a paragraph.
+
+what is an HTML element?
+
+An HTML element is defined by a start tag, some content, and an end tag:
+ <tagname> content goes here.... </tagname>
+
+The HTML element is everything from the start tag to the end tag:
+ 
+<h1>My first heading</h1>
+<p>My first paragraph</p>
+
+start tag          element content                    end tag
+----------           -------------------                      ---------
+<h1>                      My first heading                 </h1>
+
+<p>                        My first paragraph             </p>
+
+<br>                      none                                          none
+
+Note: Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
+
+Web browsers:
+-------------------
+The purpose of a web browser (chrome, edge, firefox, safari) is to read HTML documents and display them correctly.
+
+A browser does not display the HTML tags, but uses them to determine how  to display the document:
+view in browser.
+  
+HTML page structure:
+----------------------------
+Below is a visualization of an HTML page structure:
+
+<html>
+<head>
+<title>Page Title</title>
+<body>
+<h1> this is a heading</h1>
+<p>this is a paragraph</p>
+<p>this is a another paragraph</p>
+</body>
+</html>
+
+HTML documents:
+------------------------------
+All HTML documents must start with a document type declaration : <!DOCTYPE html>.
+
+The HTML document itself begins with <html> and ends with </html>.
+
+The visible part of the HTML document is between <body> and </body>.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>my first heading</h1>
+<p>my first paragraph</p>
+</body>
+</html>
+
+The <!DOCTYPE > declaration represents the document type, and helps browsers to display web pages correctly.
+
+It must only appear once, at the top of the page (before any html tags).
+
+The <1DOCTYPE> declaration is not case sensitive.
+
+The <!DOCTYPE> declaration for HTML5 is:
+
+<!DOCTYPE html>
+
+HTML headings:
+---------------------
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading.
+
+Example:
+
+<h1>This is a heading 1</h1>
+<h2>This is a heading 2</h2>
+<h3>This is a heading 3/h3>
+<h4>This is a heading 4</h4>
+<h5>This is a heading 5</h5>
+<h6>This is a heading 6</h6>
+
+HTML paragraphs:
+------------------------
+HTML paragraphs are defined with the <p> tag:
+
+Example :
+<p>This is a paragraph.</p>
+<p>This is a another paragraph.</p>
+
+HTML links
+---------------
+HTML links are defined with the <a> tag:
+ 
+Example:
+ <a href="https://"> this is a link </a>
+
+The link's declaration is specified in the href attribute.
+
+Attributes are used to provide additional information about HTML elements.
+ 
+HTML Images:
+------------------
+HTML images are defined with the <img src="  "> tag.
+
+The source file (src), alternative text(alt), width, and height are provided as attributes:
+ 
+Example:
+ <img src="image" alt=image.com" width="104px" height="142px">
+
+HTML elements:
+--------------------
+An HTML element is defined by a start tag, some content, and an end tag.
+ 
+The HTML element is everything from the start tag to the end tag:
+
+<tagname> Content goes here..... </tagname>
+
+Examples of some HTML elements:
+
+<h1>my first heading</h1>
+<p>my first paragraph</p>
+
+start tag                         Element content                                     End tag
+-----------                       ---------------------                                    -----------
+<h1>                                   my first heading                                      </h1>
+<p>                                    my first paragraph                                 </p>
+<br>                                  none                                                            none
+
+note: Some HTML elements have no content (like <br> element). These elements are called empty elements.
+Empty elements do not have an end tag!
+
+Nested HTML elements:
+------------------------------
+HTML elements can be nested (this means that elements can contain other elements).
+
+All HTML documents consist of nested HTML elements.
+
+The following example contains four HTML elements(<html>, <body>, <h1>, <p>) 
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>my first heading </h1>
+<p>my first paragraph</p>
+</body>
+</html>
+
+Example explained
+
+The <html> element is the root element and it defines the whole HTML document.
+
+It has a start tag <html> and an end tag </html>.
+
+Then, inside the <html> element there is a <body> element:
+
+<body>
+<h1>my first heading </h1>
+<p>my first paragraph</p>
+</body>
+
+The <body> element defines the document's body.
+
+It has a start tag <body> and an end tag </body>.
+
+Then, inside the <body> element there are two other elements: <h1> and <p>:
+
+<h1>my first heading </h1>
+<p>my first paragraph</p>
+
+The <h1> element defines a heading.
+
+It has a start tag <h1> and an end tag </h1> :
+<h1>my first heading </h1>
+
+The <p> element defines a paragraph.
+
+It has a start tag <p> and an end tag </p> :
+<p>my first paragraph</p>
+ 
+Never skip the end tag.
+
+Some HTML elements will display correctly, even if you forget the end tag :
+Example:
+
+<html>
+<body>
+<p>this is a paragraph
+<p>my first paragraph
+</body>
+</html>
+
+However, never rely on this! unexpected results and errors may occur if you forgetthe end tag!
+
+Empty HTML elements:
+------------------------------
+HTML elements with no content are called empty elements.
+
+The <br< tag defines a line break, and is an empty element without a closing tag :
+
+Example:
+<p>this is a <br> paragraph with a line break.</p>
+
+HTML is not case sensitive 
+
+HTML tags are nit case sensitive : <p> means the same as <p>
+
+The HTML standard does not require lowercase tags, but recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.
+
+HTML Text Formatting:
+-----------------------------
+HTML contains several elements for defining text with a special meaning.
+ 
+Example:
+
+This text is bold
+
+This text is italic
+
+This is subscript and superscript
+
+Formatting elements were designed to display special types of text:
+
+<b> - Bols text 
+<strong> - Important text 
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<marquee> - scroll the content
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text <u> </u>
+<sub> - Subscript text
+<sup> - Superscript text
+
+HTML <b> and <strong> Elements
+-----------------------------------------
+The HTML <b> element defines bold text, without any extra importance.
+
+Example:
+
+<b>This text is bold</b>
+
+The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold.
+
+Example:
+
+<strong> This text is important!</strong>
+
+HTML <i> and <em> Elements
+-----------------------------------
+The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+tip: the <i> tag is often used to indictae a techincal term, a phase from another language, a thought, a ship name etc.
+
+Example:
+
+<i>This text is italic</i>
+
+The HTML <em> element defines emphasized text. The content inside is typically displayed in italic.
+tip: A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+
+Example:
+ <em>This text is emphasized</em>
+
+HTML <small> Element
+----------------------------
+The HTML <small> element defines smaller text.
+
+Example:
+
+<small>This is some smaller text.</small>
+
+HTML <mark> Element
+----------------------------
+The HTML <mark> element defines text that should be marked or highlighted.
+
+Example:
+
+<p>Do not forget to buy <mark> milk </mark> today.</p>
+
+HTML <del> Element
+--------------------------
+The HTML <del> element defines text that has been deleted from a document . Browsers will usually strike a line through deleted text.
+
+Example:
+
+<p>my favourite color is <del> blue </del> red.</p>
+
+HTML <ins> Element
+-------------------------
+The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text.
+
+Example:
+
+<p>my favourite color is <ins> blue </ins>  red.</p>
+
+HTML <sub> Element
+--------------------------
+The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in smaller font. Subscript text can be used for chemical formulas, like H2O.
+
+Example:
+
+<p>This is <sub> subscripted </sub> text.</p>
+
+HTML <sup> Element
+--------------------------
+The HTML <sup> element defines superscripted text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscripted text can be used for foornotes, like www[1]
+
+Example:
+
+<p>This is <sup> superscripted </sup> text.</p>
+
+HTML Exercises
+-----------------------
+Test yourself with exercises
+
+Exercise:
+
+Add extra importance to the word "degradation" in the paragraph below.
+
+<p> wwf's mission is to stop the degradation of our planent's natural environment.</p>
+
+Start the exercise:
+HTML text formatting elements
+
+Tag                         Description
+-----                        ---------------
+<b>                          defines bold text
+<em>                       defines emphasized text
+<i>                            defines a part of text in an alternative voice or mood
+<small>                   defines smaller text
+<strong>                defines important text
+<sub>                      defines subscripted text
+<sup>                      defines superscripted text
+<ins>                        defines inserted text
+<del>                       defines deleted text
+<mark>                   defines marked/highlighted text
+
+HTML Lists:
+---------------
+HTML lists allow web developers to group a set of related items in lists.
+
+Example:
+
+An unordered HTML list:
+*item
+*item
+*item
+*item
+
+An ordered HTML list:
+1 first item
+2 second item
+3 third item
+4 fourth item
+
+Unordered HTML list:
+----------------------------
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. The list items will be marked with bullets (small black circles) by default.
+
+Example:
+
+<ul>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+
+Ordered HTML list:
+------------------------
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag. The list items will be marked with numners by default.
+
+Example:
+
+<ol>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>	    
+</ol>
+
+HTML Description lists:
+-----------------------------     
+HTML also supports description lists.
+
+A description list is a list of terms, with a description of each term. The <dl> tag defines the description list. The <dt> tag defines the term(name), and the <dd> tag describes each term.
+
+Example:
+
+<dl>
+	<dt>Coffee</dt>
+	<dd>-Black hot drink</dd>
+	<dt>Milk</dt>
+	<dd>-White hot drink</dd>
+</dl>
+
+HTML list tags
+-------------------
+Tag                  Description
+------                ---------------
+<ul>                    defines an unordered list
+<ol>                    defines an ordered list
+<li>                     defines a list item 
+<dl>                   defines a description list
+<dt>                  defines a term in a description list 
+<dd>                 defines the term in a description list
+
+HTML Unordered lists
+----------------------------
+ The HTML <ul> tag defines an unoredered (bulleted) list.
+An unoredered list starts with the <ul> tag. Each list item starts with the <li> tag.
+The list items will be marked with bullets(small black circles) by default.
+
+Example:
+
+<ul>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+
+Unordered HTML list - choose list item marker
+The css list-style-type property is used to define the style of the list item marker. It can have one of the following values:-
+
+Value                                Description
+-------                               --------------
+disc                                 sets the list item marker to a bullet(default)
+circle                              sets the list item marker to a circle
+square                            sets the list item marker to a square
+none                               The list items will not be marked
+
+Example - disc:
+------------------
+<ul style="list-style-type:disc;">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+
+Example - circle:
+---------------------
+<ul style="list-style-type:circle;">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+
+Example - square:
+-----------------------
+<ul style="list-style-type:square;">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+
+Example - none:
+--------------------
+<ul style="list-style-type:none;">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+
+Nested HTML lists
+------------------------
+Lists can be nested (list inside list)
+
+Example:
+
+<ul>
+	<li>Coffee</li>
+	<li>Tea</li>
+                          <ul>
+                                 <li>hot tea</li>
+                                 <li>cold tea</li>
+	    </ul>
+	<li>Milk</li>
+</ul>
+
+Note: A list item (<li>) can contain a new list, and other HTML elements, like images and links, etc.
+
+HTML Ordered lists
+-------------------------- 
+The HTML <ol> tag defines an ordered list. An odered list can be numerical or alphabetical.
+An oredered list starts with the <ol> tag. Each list item starts with the <li> tag.
+The list items will be marked with numbers by default.
+
+Example:
+
+<ol>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>	    
+</ol>
+
+Ordered HTML list - the type attribute
+The type attribute of the <ol> tag , defines the type of the list item marker.
+
+Type                             Description
+-------                           ---------------
+type="1"                      The list items will be numbered with numbers(default)
+type="A"                     The list items will be numbered with uppercase letters
+type="a"                      The list items will be numbered with lowercase letters
+type="I"                      The list items will be numbered with uppercase roman numbers
+type="i"                       The list items will be numbered with lowercase roman numbers
+
+Example - numbers:
+------------------------
+<ol type="1">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>	    
+</ol>
+
+ Example - uppercase letters:
+-----------------------------------
+<ol type="A">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>	    
+</ol>
+
+Example - lowercase letters:
+----------------------------------
+<ol type="a">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>	    
+</ol>
+
+Example - uppercase roman numbers:
+----------------------------------------------
+<ol type="I">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>	    
+</ol>
+
+Example - lowercase roman numbers:
+---------------------------------------------
+<ol type="i">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>	    
+</ol>
+
+Example - start with any number or letter:
+---------------------------------------------------
+<ol start="50">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>	    
+</ol>
+
+Nested HTML lists
+-----------------------
+lists can be nested(list inside list).
+Example
+ 
+<ol>
+	<li>Coffee</li>
+                      <ol>
+                             <li>Black coffee</li>
+                             <li>cold coffee</li>
+                      </ol>
+	<li>Tea</li>
+	<li>Milk</li>	    
+</ol>
+
+note: A list (<li>) can contain a new lists, and other HTML elements, like images and links etc.
+
+HTML Tables:
+-----------------
+HTML tables allow web developers to arrange data into rows and columns.
+tr - table rows
+th - table headings
+td - table data
+
+Example:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            th{
+                background-color: aquamarine;
+            }
+            td{
+                background-color:greenyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width: 100%;">
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Johnson</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jones</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Davis</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Smith</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Brown</td>
+                <td>46</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Williams</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Thomas</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Jackson</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Taylor</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Moore</td>
+                <td>40</td>
+            </tr>
+
+        </table>
+    </body>
+</html>
+
+Colspan :
+----------
+Merge the many columns into one column.
+Example:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            th{
+                background-color: coral;
+            }
+            td{
+                background-color: cornflowerblue;
+            }
+        </style>
+    </head>
+    <body>
+        <table width="100%">
+            <tr>
+                <th colspan="2">Language and Frameworks</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Django</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>React.js</td>
+            </tr>
+            <tr>
+                <td>Ruby</td>
+                <td>Ruby on Rails</td>
+            </tr>
+        </table>
+    </body>
+</html>
+ 
+Rowspan:
+------------
+Merge the many rows into one row.
+ Example:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            th{
+                background-color: darkcyan;
+            }
+            td{
+                background-color: darkgrey;
+            }
+        </style>
+    </head>
+    <body>
+        <table width="100%">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td rowspan="3">1</td>
+                <td rowspan="3">David</td>
+                <td>Maths</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>90</td>
+            </tr>
+            <tr>
+            <td>Computers</td>
+            <td>70</td>
+            </tr>
+            <tr>
+                <td rowspan="3">2</td>
+                <td rowspan="3">Alex</td>
+                <td>Maths</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>70</td>
+            </tr>
+            <tr>
+            <td>Computers</td>
+            <td>90</td>
+            </tr>
+            <tr>
+                <td rowspan="3">3</td>
+                <td rowspan="3">Ravi</td>
+                <td>Maths</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>80</td>
+            </tr>
+            <tr>
+            <td>Computers</td>
+            <td>90</td>
+            </tr>
+
+        </table>
+    </body>
+</html>
+
+HTML Forms:
+-----------------
+An HTML form is used to collect user input.
+The user input is most often sent to a server for processing.
+ 
+Example:
+ 
+First name:
+John
+
+Last name:
+Doe
+
+<form> element :
+-------------------
+The HTML <form> element is used to create an HTML form for user input.
+
+<form>
+.
+form elements
+.
+</form>
+
+The <form> element is a container for different types of input elements, suchas:  text fields, checkboxes, radio buttons, submit buttons, etc..
+
+<input> element:   
+-------------------
+The HTML <input> element is the most used from element.
+An <input> element can be displayed in many ways, depending on the type attribute.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
